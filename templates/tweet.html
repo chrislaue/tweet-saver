@@ -1,0 +1,17 @@
+<div class="tweet well" {{#moveable}}draggable="true" data-tweet="{{index}}"{{/moveable}} >
+	{{^moveable}}<button class="close pull-right">&times;</button>{{/moveable}}
+	<div {{^moveable}}id="t-{{id_str}}"{{/moveable}} class="clearfix">
+		<img src="{{profile_image_url}}" class="pull-left span2 img-rounded" alt="{{from_user_name}}" >
+		<div class="pull-right span10">
+			<dl class="clearfix">
+				<dt class="pull-left"><b>{{from_user_name}}</b> {{{link_from_user}}}</dt>
+				<dd class="pull-right">{{tweet_date}}</dd>
+			</dl>
+			<p>{{{link_text}}}</p>
+			{{#reply_to}}
+			<p class="reply"><small>{{{reply_to}}}</small></p>
+			{{/reply_to}}
+			</div>
+		</div>
+	</div>
+</div>

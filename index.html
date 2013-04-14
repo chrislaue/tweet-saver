@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tweet Saver</title>
+		<!-- Using Twitter's Bootstrap : Great for rapid prototyping -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<!-- Overrides -->
+		<link rel="stylesheet" href="css/customizations.css">
+		<!-- Modernizr in the event I get some time to write fall backs for lesser enabled browsers -->
+		<script src="js/modernizer-custom.min.js"></script>
+			<!-- Apply the html5 shim for older versions of IE -->
+	    <!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<h1>Tweet Saver</h1>
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="input-append span12" id="search-controls">
+						<input id="search" size="16" placeholder="Search Twitter" type="text"/><button id="search-button" class="btn btn-primary" type="button"><i class="icon-search icon-white"></i></button>
+					</div>
+					<div id="search-results" class="well clearfix">
+						<p class="placeholder">Search for something!</p>
+					</div>
+				</div>
+				<div id="saved-results" class="span6">
+					<h3>Saved Tweets</h3>
+					<div class="well" id="saved-tweets">
+						<p id="first-run-message" class="placeholder" >Drag a tweet from the left to save for future reference.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Scripts : Where possible pulling from a CDN for faster loading --> 
+ 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+ 		<!-- jQuery plugin for native drag and drop -->
+ 		<script src="js/jquery.ndd.js"></script>
+ 		<!-- Twitter's Bootstrap JS component -->
+		<script src="js/bootstrap.js"></script>
+		<!-- Twitter's text processing lib -->
+		<script src="js/twitter-text.js"></script>
+		<!-- Twitter's Mustache compiler / renderer -->
+		<script src="http://twitter.github.com/hogan.js/builds/2.0.0/hogan-2.0.0.js"></script>
+		<!-- Tweet Saver -->
+		<script src="js/tweetSaver.js"></script>
+	</body>
+</html>

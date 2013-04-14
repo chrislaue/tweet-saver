@@ -1,0 +1,19 @@
+{
+  "name": "tweet-saver",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Search twitter and save tweets in local storage.",
+  "author": "Chris Laue",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib": "~0.4.0",
+    "grunt-jsbeautifier": "~0.1.6",
+    "grunt-s3": "~0.1.0"
+  },
+  "engines": {
+    "node": "0.8.x"
+  }
+}

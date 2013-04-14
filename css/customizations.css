@@ -1,0 +1,94 @@
+/*
+*  Remove the default cursor for elements marked as draggable
+*/
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor : move;
+}
+/*
+*   Adjusment to the bootstrapped styles for H1
+*/
+h1 {
+  border-bottom:1px solid #333;
+  margin-bottom:10px;
+}
+/*
+*   Give the search element a custom width
+*   Combination of text input and button doesn't 
+*   play nicely with predefined grid (.span*)
+*/
+#search {
+  width:87.4%;
+}
+/*
+*   Remove the floating behaviour of .input-append
+*/
+#search-controls {
+  float:none;
+}
+/*
+*   Tighten up the padding of the two wells used to display results
+*   and saved tweets
+*/
+#search-results, #saved-tweets {
+  padding-left:5px;
+  padding-right:5px;
+}
+/*
+*   Adjust the line height and margin of the header for saved results 
+*/
+#saved-results h3 {
+  line-height:1.3;
+  margin-top:0;
+  margin-bottom:3px;
+}
+/*
+*   Lighten the background of the wells used for tweets and adjust the bottom 
+*   margin.
+*/
+.tweet.well {
+  background-color:rgba(250,250,250,.85);
+  margin-bottom:2px;
+  position:relative;
+}
+
+p.placeholder {
+	text-align:center;
+	margin:0;
+}
+
+.tweet.well p {
+	margin-bottom:3px;
+	line-height:1.3;
+}
+
+.tweet.well p.reply a {
+	opacity : 0.35;
+	color:#333;
+}
+.tweet.well p.reply a:hover {
+	opacity : 1.0;
+}
+
+.tweet.well .close {
+  position:absolute;
+  top:5px;
+  right:5px;
+
+}
+/*
+*   Strip out the top and bottom margin on definition lists to give it a 
+*   tighter feel.
+*/
+.tweet dl {
+  margin-top:0;
+  margin-bottom:0;
+}
+
+p.reply {
+	margin-top:0;
+	padding-top:0;
+}
